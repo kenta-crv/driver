@@ -191,15 +191,6 @@ ActiveRecord::Schema.define(version: 2020_11_10_032643) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "questions", force: :cascade do |t|
-    t.string "body"
-    t.string "genre"
-    t.integer "member_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["member_id"], name: "index_questions_on_member_id"
-  end
-
   create_table "rooms", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "member_id", null: false

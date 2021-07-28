@@ -10,27 +10,27 @@ html
             =image_tag "rogo.png", class:"header-image"
         .col-xs-7
         .col-xs-2
-                .navToggle
-                  span
-                  span
-                  span
-                  span menu
+                /.navToggle
+                /  span
+                /  span
+                /  span
+                /  span menu
       .row.navi
         .col-xs-12.center.hidden-xs
           ul#dropmenu
-           li
-             = link_to  'トップページ', '/' , class: "col-md"
-           li
-             = link_to  '人材企業サーチ', '/lists' , :class=>"col-md"
-           li
-             = link_to  '記事一覧', '/posts' , :class=>"col-md"
-           li
-             = link_to  'よくある質問', '/faq' , :class=>"col-md"
-           li
-             = link_to  '会社概要', '/co' , :class=>"col-md"
-           li
-             = link_to  '問い合わせ', '/contact' , :class=>"col-md"
-           li
+           /li
+            / = link_to  'トップページ', '/' , class: "col-md"
+           /li
+            / = link_to  '人材企業サーチ', '/lists' , :class=>"col-md"
+           /li
+            / = link_to  '記事一覧', '/posts' , :class=>"col-md"
+           /li
+            / = link_to  'よくある質問', '/faq' , :class=>"col-md"
+           /li
+            / = link_to  '会社概要', '/co' , :class=>"col-md"
+           /li
+            / = link_to  '問い合わせ', '/contact' , :class=>"col-md"
+           /li
              = link_to  '会員案内', '/contact', :class=>"col-md"
              ul
                  li
@@ -52,21 +52,21 @@ html
                    - if admin_signed_in?
                     = link_to 'マイページ', admin_path(current_admin)
 
-        nav.globalMenuSp
-           ul
-            li
-              = link_to  'トップページ', '/' , class: "col-md"
-            li
-              = link_to  '人材企業サーチ', '/lists' , :class=>"col-md"
-            li
-              = link_to  '記事一覧', '/posts' , :class=>"col-md"
-            li
-              = link_to  'よくある質問', '/faq' , :class=>"col-md"
-            li
-              = link_to  '会社概要', '/co' , :class=>"col-md"
-            li
-              = link_to  '問い合わせ', '/contact' , :class=>"col-md"
-            li
+        /nav.globalMenuSp
+           /ul
+            /li
+            /  = link_to  'トップページ', '/' , class: "col-md"
+            /li
+            /  = link_to  '人材企業サーチ', '/lists' , :class=>"col-md"
+            /li
+            /  = link_to  '記事一覧', '/posts' , :class=>"col-md"
+            /li
+            /  = link_to  'よくある質問', '/faq' , :class=>"col-md"
+            /li
+            /  = link_to  '会社概要', '/co' , :class=>"col-md"
+            /li
+            /  = link_to  '問い合わせ', '/contact' , :class=>"col-md"
+            /li
               - if user_signed_in?
                = link_to "マイページ", user_path(current_user)
               - else
